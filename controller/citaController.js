@@ -1,6 +1,6 @@
 const pool = require("../database/index")
 const SQL_CITAS_FAMILIA = 'SELECT c.horaInicio, c.horaFin, c.nombre AS nombreCita, ' +
-                          ' cent.nombre AS nombreCentro, c.fecha, p.nombre AS nombrePersonal, p.apellidos AS apellidosPersonal, cent.direccion, c.completada '+
+                          ' cent.nombre AS nombreCentro, c.fecha, p.nombreCompleto AS nombreCompletoPersonal,  cent.direccion, c.completada '+
                           'FROM CITA c '+
                           'JOIN CENTRO cent ON c.idCentro = cent.idCentro '+
                           'JOIN PERSONAL p ON c.idPersonal = p.idPersonal '+
