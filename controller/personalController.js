@@ -1,5 +1,5 @@
 const pool = require("../database/index")
-const SQL_PERSONAL_CONTACTOS = 'SELECT * '+
+const SQL_PERSONAL_CONTACTOS = 'SELECT p.* '+
                                'FROM PERSONAL p '+
                                'JOIN CENTRO c ON p.idCentro = c.idCentro '+
                                'WHERE p.idCentro = ( '+
