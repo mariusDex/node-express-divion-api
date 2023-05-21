@@ -10,6 +10,7 @@ const familiaController = require("../controller/familiaController");
 // CITAS MANAGEMENT // 
 
 router.get("/citas/:idFamilia", citaController.citasById);
+router.delete("/citas/delete/:idCita", citaController.deleteCita);
 
 // PERSONAL MANAGEMENT //
 
